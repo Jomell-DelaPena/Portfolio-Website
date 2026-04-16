@@ -13,7 +13,7 @@ export default function Certifications() {
         Certifications
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
         {certifications.map((cert) => (
           <div
             key={cert.name}
@@ -34,7 +34,7 @@ export default function Certifications() {
               className="text-[10px] mt-1"
               style={{ color: "var(--text-muted)" }}
             >
-              {cert.issuer} · {cert.year}
+              {cert.issuer}{cert.year ? ` · ${cert.year}` : ""}
             </p>
           </div>
         ))}

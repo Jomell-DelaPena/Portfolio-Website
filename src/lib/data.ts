@@ -81,28 +81,34 @@ export const projects = [
 
 export const certifications = [
   {
-    name: "AWS Certified Developer",
-    issuer: "Amazon Web Services",
-    year: "2024",
+    name: "PacketHacks Enablement Session",
+    issuer: "PacketHacks",
+    year: "",
+    icon: "🔐",
+  },
+  {
+    name: "Red Hat Training & Certification",
+    issuer: "Red Hat",
+    year: "",
+    icon: "🎩",
+  },
+  {
+    name: "Compute Cloud Services",
+    issuer: "Cloud Training",
+    year: "",
     icon: "☁️",
   },
   {
-    name: "Google Cloud Professional",
-    issuer: "Google",
-    year: "2023",
-    icon: "🌐",
+    name: "Huawei HCIA-IoT Course",
+    issuer: "Huawei",
+    year: "",
+    icon: "📡",
   },
   {
-    name: "Meta React Developer",
-    issuer: "Meta",
-    year: "2023",
-    icon: "⚛️",
-  },
-  {
-    name: "MongoDB Associate",
-    issuer: "MongoDB University",
-    year: "2022",
-    icon: "🍃",
+    name: "AWS Academy Cloud Foundations",
+    issuer: "Amazon Web Services",
+    year: "",
+    icon: "🟠",
   },
 ];
 
