@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MapPin, BadgeCheck, Calendar, Mail, BookOpen } from "lucide-react";
 import { personal } from "@/lib/data";
 
@@ -10,11 +11,15 @@ export default function Hero() {
       <div className="flex flex-col sm:flex-row gap-5 items-start">
         {/* Avatar */}
         <div className="shrink-0">
-          <div
-            className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl flex items-center justify-center text-4xl font-bold"
-            style={{ background: "var(--accent-subtle)", color: "var(--accent)" }}
+          <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden ring-2 ring-[var(--accent)] ring-offset-2 ring-offset-[var(--bg-card)]"
           >
-            {personal.name.charAt(0)}
+            <Image
+              src="/profile.jpg"
+              alt={personal.name}
+              fill
+              className="object-cover object-top"
+              priority
+            />
           </div>
         </div>
 
