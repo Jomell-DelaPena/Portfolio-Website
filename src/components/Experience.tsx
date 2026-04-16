@@ -49,12 +49,24 @@ export default function Experience() {
                     >
                       {item.role}
                     </p>
-                    <p
-                      className="text-xs font-medium"
-                      style={{ color: "var(--accent)" }}
-                    >
-                      {item.company}
-                    </p>
+                    {item.companyUrl ? (
+                      <a
+                        href={item.companyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-xs font-medium hover:underline underline-offset-2 transition-colors"
+                        style={{ color: "var(--accent)" }}
+                      >
+                        {item.company} ↗
+                      </a>
+                    ) : (
+                      <p
+                        className="text-xs font-medium"
+                        style={{ color: "var(--accent)" }}
+                      >
+                        {item.company}
+                      </p>
+                    )}
                   </div>
                   <span
                     className="text-[10px] font-mono shrink-0"
