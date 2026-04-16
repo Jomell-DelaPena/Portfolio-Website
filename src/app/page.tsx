@@ -4,7 +4,6 @@ import Experience from "@/components/Experience";
 import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
 import Certifications from "@/components/Certifications";
-import Recommendations from "@/components/Recommendations";
 import Footer from "@/components/Footer";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
@@ -35,8 +34,7 @@ export default function Home() {
         <TechStack />
         <Projects />
         <Certifications />
-        <Recommendations />
-        <Footer />
+<Footer />
       </div>
     </main>
   );
