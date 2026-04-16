@@ -54,28 +54,28 @@ export const experience = [
 
 export const projects = [
   {
-    name: "Project Alpha",
-    description: "A full-stack SaaS platform with real-time collaboration features and a clean, minimal interface.",
-    url: "#",
-    tags: ["Next.js", "TypeScript", "PostgreSQL"],
+    name: "LearnLink VA",
+    description: "Company website for a virtual assistant and digital marketing agency. Built to help entrepreneurs and businesses find support with administrative tasks, online marketing, and digital operations.",
+    url: "https://learnlinkva.com",
+    tags: ["Web Design", "CMS", "Digital Marketing"],
   },
   {
-    name: "Project Beta",
-    description: "An open-source developer tool that streamlines the deployment workflow for small teams.",
-    url: "#",
-    tags: ["Node.js", "Docker", "React"],
+    name: "WebSamples.click",
+    description: "A personal portfolio platform showcasing live, interactive web projects hosted on individual subdomains. Designed to demonstrate completed client work before official launch.",
+    url: "https://websamples.click",
+    tags: ["Portfolio", "Web Dev", "Subdomains"],
   },
   {
-    name: "Project Gamma",
-    description: "AI-powered content generation tool built with the Anthropic API and a modern React frontend.",
-    url: "#",
-    tags: ["Python", "React", "AI"],
+    name: "WE Partners Network",
+    description: "Global community platform for real estate entrepreneurs powered by eXp Realty. Connects members through networking events, educational resources, and investment opportunities.",
+    url: "https://wpn.websamples.click",
+    tags: ["Real Estate", "Community", "WordPress"],
   },
   {
-    name: "Project Delta",
-    description: "A mobile-first e-commerce platform with integrated payment processing and inventory management.",
-    url: "#",
-    tags: ["Next.js", "Stripe", "MongoDB"],
+    name: "Service Web Studio",
+    description: "Digital marketing agency site offering website design, SEO, graphic design, and email marketing services — helping brands build a stronger online presence with campaigns that convert.",
+    url: "https://service-web-studio.vercel.app/",
+    tags: ["Next.js", "Vercel", "Agency"],
   },
 ];
 
