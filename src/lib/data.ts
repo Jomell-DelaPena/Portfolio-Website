@@ -7,9 +7,8 @@ export const personal = {
   tagline: "Building digital experiences that matter.",
   calendarUrl: "https://calendly.com/jomellhopedelapena/30min",
   blogUrl: "#",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
-  instagram: "https://instagram.com/yourusername",
+  github: "https://github.com/Jomell-DelaPena",
+  linkedin: "https://www.linkedin.com/in/jomell-hope-dela-pe%C3%B1a-796386259/",
   availableForWork: true,
 };
 
