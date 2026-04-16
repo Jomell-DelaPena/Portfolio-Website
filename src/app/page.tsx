@@ -21,7 +21,7 @@ export default function Home() {
       >
         <div className="max-w-3xl mx-auto px-4 h-12 flex items-center justify-between">
           <span className="text-xs font-mono" style={{ color: "var(--text-muted)" }}>
-            portfolio.dev
+            portfolio.jhgdp
           </span>
           <ThemeToggle />
         </div>
