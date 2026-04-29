@@ -213,7 +213,11 @@ export default function QuoteEstimatorPage() {
   const toggleAddon = (id: string) =>
     setSelectedAddons((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
       return next;
     });
 
@@ -524,7 +528,7 @@ export default function QuoteEstimatorPage() {
             style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
           >
             <h2 className="text-sm font-semibold mb-4" style={{ color: "var(--text-primary)" }}>
-              What's your timeline?
+              What&apos;s your timeline?
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
               {timelines.map((t) => {

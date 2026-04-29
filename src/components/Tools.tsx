@@ -3,13 +3,43 @@ import { ArrowRight } from "lucide-react";
 
 const tools = [
   {
+    icon: "🏷️",
+    badge: "SEO TOOL",
+    badgeStyle: { background: "rgba(14,165,233,0.1)", color: "#0ea5e9" },
+    name: "Meta Tags Generator",
+    description:
+      "Create clean SEO titles, descriptions, and social preview tags for business websites.",
+    url: "/tools/meta-tags/",
+    cta: "Build meta tags",
+  },
+  {
+    icon: "💼",
+    badge: "VA NICHE",
+    badgeStyle: { background: "rgba(245,158,11,0.12)", color: "#f59e0b" },
+    name: "VA Rate Calculator",
+    description:
+      "Set hourly, weekly, and monthly pricing targets for virtual assistant and remote services.",
+    url: "/tools/va-rate-calculator/",
+    cta: "Calculate rates",
+  },
+  {
+    icon: "✍️",
+    badge: "LOCAL TOOL",
+    badgeStyle: { background: "rgba(236,72,153,0.1)", color: "#ec4899" },
+    name: "Bio Writer",
+    description:
+      "Generate polished business owner bios from simple prompts without waiting on AI.",
+    url: "/tools/bio-writer/",
+    cta: "Write my bio",
+  },
+  {
     icon: "⚡",
     badge: "LIVE DEMO",
     badgeStyle: { background: "rgba(16,185,129,0.1)", color: "#10b981" },
     name: "Project Quote Estimator",
     description:
       "Pick your project type and features — get an instant price range and a downloadable PDF summary.",
-    url: "/tools/quote-estimator",
+    url: "/tools/quote-estimator/",
     cta: "Estimate my project",
   },
   {
@@ -19,7 +49,7 @@ const tools = [
     name: "Marketing Copy Generator",
     description:
       "Enter your product, audience, and platform — get 3 ready-to-use copy variations in seconds.",
-    url: "/tools/copy-generator",
+    url: "/tools/copy-generator/",
     cta: "Generate copy",
   },
 ];
@@ -34,10 +64,10 @@ export default function Tools() {
         className="text-xs font-semibold uppercase tracking-widest mb-1"
         style={{ color: "var(--text-muted)" }}
       >
-        Free Tools
+        Other Projects
       </h2>
       <p className="text-xs mb-5" style={{ color: "var(--text-secondary)" }}>
-        Live, working tools — try them free. These are exactly what I build for clients.
+        Live, working tools and demos visitors can try for themselves.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

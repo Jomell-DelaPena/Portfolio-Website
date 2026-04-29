@@ -11,7 +11,7 @@ export default function Projects() {
         className="text-xs font-semibold uppercase tracking-widest mb-5"
         style={{ color: "var(--text-muted)" }}
       >
-        Recent Projects
+        Maintaining Projects
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">

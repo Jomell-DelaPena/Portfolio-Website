@@ -100,7 +100,7 @@ export default function CopyGeneratorPage() {
         </h1>
         <p className="text-sm mt-1" style={{ color: "var(--text-secondary)" }}>
           Describe your product, pick a platform and tone — get 3 ready-to-use copy variations
-          powered by Claude AI.
+          powered by Groq AI.
         </p>
       </div>
 
