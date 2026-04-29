@@ -54,27 +54,27 @@ export const experience = [
 export const projects = [
   {
     name: "LearnLink VA",
-    description: "Company website for a virtual assistant and digital marketing agency. Built to help entrepreneurs and businesses find support with administrative tasks, online marketing, and digital operations.",
+    description: "Live client website and digital operations platform for a virtual assistant and marketing agency. I support ongoing updates, workflow improvements, and production maintenance.",
     url: "https://learnlinkva.com",
-    tags: ["Web Design", "CMS", "Digital Marketing"],
+    tags: ["Live Client Site", "Production", "Operations"],
   },
   {
     name: "WebSamples.click",
-    description: "A personal portfolio platform showcasing live, interactive web projects hosted on individual subdomains. Designed to demonstrate completed client work before official launch.",
+    description: "Production showcase hub used to host live, interactive client previews on individual subdomains before launch. I maintain the platform and deployment flow.",
     url: "https://websamples.click",
-    tags: ["Portfolio", "Web Dev", "Subdomains"],
+    tags: ["Client Previews", "Subdomains", "Maintained"],
   },
   {
     name: "WE Partners Network",
-    description: "Global community platform for real estate entrepreneurs powered by eXp Realty. Connects members through networking events, educational resources, and investment opportunities.",
+    description: "Active community platform for real estate entrepreneurs powered by eXp Realty. I maintain the site experience, content updates, and production reliability.",
     url: "https://wpn.websamples.click",
-    tags: ["Real Estate", "Community", "WordPress"],
+    tags: ["Live Client Site", "Community", "WordPress"],
   },
   {
     name: "Service Web Studio",
-    description: "Digital marketing agency site offering website design, SEO, graphic design, and email marketing services — helping brands build a stronger online presence with campaigns that convert.",
+    description: "Live agency website for web design, SEO, graphic design, and email marketing services. I maintain the public site and improve its client-facing presentation.",
     url: "https://service-web-studio.vercel.app/",
-    tags: ["Next.js", "Vercel", "Agency"],
+    tags: ["Production", "Next.js", "Vercel"],
   },
 ];
 

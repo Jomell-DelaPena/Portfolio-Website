@@ -8,11 +8,14 @@ export default function Projects() {
       style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
     >
       <h2
-        className="text-xs font-semibold uppercase tracking-widest mb-5"
+        className="text-xs font-semibold uppercase tracking-widest mb-1"
         style={{ color: "var(--text-muted)" }}
       >
-        Maintaining Projects
+        Active Client Projects
       </h2>
+      <p className="text-xs mb-5" style={{ color: "var(--text-secondary)" }}>
+        Live client projects I currently maintain, improve, and support in production.
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         {projects.map((project) => (
