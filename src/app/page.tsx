@@ -3,6 +3,7 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import TechStack from "@/components/TechStack";
 import Projects from "@/components/Projects";
+import Tools from "@/components/Tools";
 import Certifications from "@/components/Certifications";
 import Footer from "@/components/Footer";
 import ThemeToggle from "@/components/ui/ThemeToggle";
@@ -33,8 +34,9 @@ export default function Home() {
         <Experience />
         <TechStack />
         <Projects />
+        <Tools />
         <Certifications />
-<Footer />
+        <Footer />
       </div>
     </main>
   );

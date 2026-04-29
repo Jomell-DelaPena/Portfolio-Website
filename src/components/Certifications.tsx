@@ -3,7 +3,7 @@ import { certifications } from "@/lib/data";
 export default function Certifications() {
   return (
     <div
-      className="rounded-2xl border p-6 animate-fade-in delay-600"
+      className="rounded-2xl border p-6 animate-fade-in delay-700"
       style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
     >
       <h2
