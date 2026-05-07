@@ -18,6 +18,27 @@ export const techStack = {
   devops: ["AWS", "Docker", "GitHub Actions", "Vercel", "Linux"],
 };
 
+export const capabilities = [
+  {
+    name: "GoHighLevel Systems",
+    description:
+      "Setting up GHL workspaces, CRM pipelines, calendars, forms, automations, and client communication flows for service-based businesses.",
+    tags: ["GHL", "CRM", "Lead Management"],
+  },
+  {
+    name: "Funnel Builds",
+    description:
+      "Building landing pages and conversion funnels that connect ads, offers, forms, follow-ups, and booking flows into one client acquisition path.",
+    tags: ["Landing Pages", "Funnels", "Conversion"],
+  },
+  {
+    name: "n8n Automations",
+    description:
+      "Designing workflow automations that connect tools, route leads, sync data, notify teams, and reduce repetitive manual operations.",
+    tags: ["n8n", "Workflow Automation", "Integrations"],
+  },
+];
+
 export const experience = [
   {
     role: "Digital Operations Specialist",
