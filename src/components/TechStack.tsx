@@ -1,50 +1,72 @@
-import { techStack } from "@/lib/data";
-
-const categories = [
-  { label: "Frontend", items: techStack.frontend, icon: "⚡" },
-  { label: "Backend", items: techStack.backend, icon: "🛠" },
-  { label: "DevOps", items: techStack.devops, icon: "☁️" },
-];
+import { toolRows } from "@/lib/data";
 
 export default function TechStack() {
   return (
     <div
-      className="rounded-2xl border p-6 animate-fade-in delay-400"
+      className="rounded-2xl border p-6 sm:p-7 animate-fade-in delay-400"
       style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
     >
       <h2
-        className="text-xs font-semibold uppercase tracking-widest mb-5"
+        className="text-xs font-semibold uppercase tracking-widest mb-1"
         style={{ color: "var(--text-muted)" }}
       >
-        Tech Stack
+        Tools & Platforms
       </h2>
+      <p className="text-xs mb-5" style={{ color: "var(--text-secondary)" }}>
+        Developer tools, CRM platforms, funnel systems, and automation software I can work with.
+      </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        {categories.map((cat) => (
-          <div key={cat.label}>
-            <p
-              className="text-xs font-semibold mb-2 flex items-center gap-1"
-              style={{ color: "var(--text-primary)" }}
-            >
-              <span>{cat.icon}</span>
-              {cat.label}
-            </p>
-            <div className="flex flex-wrap gap-1.5">
-              {cat.items.map((item) => (
-                <span
-                  key={item}
-                  className="text-[11px] px-2 py-0.5 rounded-md font-medium"
-                  style={{
-                    background: "var(--accent-subtle)",
-                    color: "var(--accent)",
-                  }}
+      <div className="space-y-5">
+        {toolRows.map((row, rowIndex) => {
+          const loopItems = [...row.items, ...row.items];
+          const reverse = rowIndex % 2 === 1;
+
+          return (
+            <div key={row.label}>
+              <div className="mb-2.5">
+                <p className="text-xs font-semibold" style={{ color: "var(--text-primary)" }}>
+                  {row.label}
+                </p>
+              </div>
+
+              <div className="tools-marquee">
+                <div
+                  className={`tools-marquee-track ${
+                    reverse ? "tools-marquee-track-reverse" : ""
+                  }`}
                 >
-                  {item}
-                </span>
-              ))}
+                  {loopItems.map((item, index) => {
+                    const darkText = item.color === "#f7df1e" || item.color === "#facc15";
+
+                    return (
+                      <div
+                        key={`${row.label}-${item.name}-${index}`}
+                        className="tools-chip"
+                        style={{ background: "var(--bg)", borderColor: "var(--border)" }}
+                      >
+                        <span
+                          className="tools-chip-mark"
+                          style={{
+                            background: item.color,
+                            color: darkText ? "#111827" : "#fff",
+                          }}
+                        >
+                          {item.short}
+                        </span>
+                        <span
+                          className="tools-chip-label"
+                          style={{ color: "var(--text-primary)" }}
+                        >
+                          {item.name}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

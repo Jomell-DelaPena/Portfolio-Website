@@ -5,7 +5,7 @@ import { personal } from "@/lib/data";
 export default function Hero() {
   return (
     <div
-      className="rounded-2xl border p-6 animate-fade-in delay-100"
+      className="rounded-2xl border p-6 sm:p-7 animate-fade-in delay-100"
       style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
     >
       <div className="flex flex-col sm:flex-row gap-5 items-start">

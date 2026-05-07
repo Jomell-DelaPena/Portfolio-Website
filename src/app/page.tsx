@@ -20,7 +20,7 @@ export default function Home() {
           background: "color-mix(in srgb, var(--bg) 80%, transparent)",
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 h-12 flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-12 flex items-center justify-between">
           <span className="text-xs font-mono" style={{ color: "var(--text-muted)" }}>
             portfolio.jhgdp
           </span>
@@ -29,7 +29,7 @@ export default function Home() {
       </nav>
 
       {/* Content */}
-      <div className="max-w-3xl mx-auto px-4 py-8 space-y-4">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 space-y-4">
         <Hero />
         <About />
         <Experience />

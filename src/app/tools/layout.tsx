@@ -13,7 +13,7 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
           background: "color-mix(in srgb, var(--bg) 80%, transparent)",
         }}
       >
-        <div className="max-w-3xl mx-auto px-4 h-12 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-12 flex items-center justify-between">
           <Link
             href="/"
             className="flex items-center gap-1.5 text-xs font-mono transition-colors hover:text-[var(--accent)]"
@@ -27,7 +27,7 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
       </nav>
 
       {/* Content */}
-      <div className="max-w-3xl mx-auto px-4 py-8 space-y-4">{children}</div>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 space-y-4">{children}</div>
     </main>
   );
 }

@@ -78,6 +78,100 @@ body {
 .delay-700 { animation-delay: 700ms; }
 .delay-800 { animation-delay: 800ms; }
 
+/* Animated tools marquee */
+@keyframes toolsMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes toolsMarqueeReverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.tools-marquee {
+  position: relative;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent,
+    #000 8%,
+    #000 92%,
+    transparent
+  );
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.tools-marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 0.75rem;
+  animation: toolsMarquee 42s linear infinite;
+}
+
+.tools-marquee-track-reverse {
+  animation-name: toolsMarqueeReverse;
+  animation-duration: 48s;
+}
+
+.tools-marquee:hover .tools-marquee-track {
+  animation-play-state: paused;
+}
+
+.tools-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-width: max-content;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  padding: 0.65rem 0.85rem;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+  transition: border-color 160ms ease, transform 160ms ease, background 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.tools-chip:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+  background: var(--bg-card-hover) !important;
+  box-shadow: 0 14px 34px rgba(6, 182, 212, 0.12);
+}
+
+.tools-chip-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.65rem;
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.tools-chip-label {
+  font-size: 0.86rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tools-marquee-track,
+  .tools-marquee-track-reverse {
+    animation: none;
+    transform: translateX(0);
+  }
+}
+
 /* Testimonials carousel */
 @keyframes scroll-testimonials {
   0%, 12.5% { transform: translateX(0%); }

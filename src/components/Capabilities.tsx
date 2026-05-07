@@ -6,7 +6,7 @@ const icons = [Workflow, Filter, Bot];
 export default function Capabilities() {
   return (
     <div
-      className="rounded-2xl border p-6 animate-fade-in delay-500"
+      className="rounded-2xl border p-6 sm:p-7 animate-fade-in delay-500"
       style={{ background: "var(--bg-card)", borderColor: "var(--border)" }}
     >
       <h2
@@ -19,14 +19,14 @@ export default function Capabilities() {
         GHL, funnel, and automation work that connects websites to real client operations.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
         {capabilities.map((capability, index) => {
           const Icon = icons[index] ?? Workflow;
 
           return (
             <div
               key={capability.name}
-              className="rounded-xl border p-4 transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)]"
+              className="rounded-xl border p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)]"
               style={{ background: "var(--bg)", borderColor: "var(--border)" }}
             >
               <div
