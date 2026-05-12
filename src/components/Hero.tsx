@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MapPin, BadgeCheck, Calendar, Mail, BookOpen } from "lucide-react";
+import { MapPin, BadgeCheck, Calendar, Mail, BookOpen, Download } from "lucide-react";
 import { personal } from "@/lib/data";
 
 export default function Hero() {
@@ -110,6 +110,18 @@ export default function Hero() {
               Read my blog
             </a>
           )}
+          <a
+            href="/resume.pdf"
+            download="Dela_Pena_Resume_2026.pdf"
+            className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--bg-card-hover)]"
+            style={{
+              borderColor: "var(--border)",
+              color: "var(--text-primary)",
+            }}
+          >
+            <Download size={12} />
+            Resume
+          </a>
         </div>
       </div>
     </div>
