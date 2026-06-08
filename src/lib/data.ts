@@ -133,9 +133,9 @@ export const capabilities = [
 export const experience = [
   {
     role: "Digital Operations Specialist",
-    company: "LearnLink VA",
+    company: "Service Web Studio",
     period: "2026 — Present",
-    description: "Overseeing digital workflows and operational systems for a virtual assistant company. Streamlining processes, coordinating remote teams, and implementing tech-driven solutions to improve service delivery and client satisfaction.",
+    description: "Overseeing digital workflows and operational systems for the agency. I handle web development on the marketing-agency side and build out various business systems — ERPs, POS, and internal tools — while diving deeper into automations that streamline processes, coordinate remote teams, and improve service delivery.",
     current: true,
   },
   {
@@ -165,12 +165,6 @@ export const experience = [
 
 export const projects = [
   {
-    name: "LearnLink VA",
-    description: "Live client website and digital operations platform for a virtual assistant and marketing agency. I support ongoing updates, workflow improvements, and production maintenance.",
-    url: "https://learnlinkva.com",
-    tags: ["Live Client Site", "Production", "Operations"],
-  },
-  {
     name: "WebSamples.click",
     description: "Production showcase hub used to host live, interactive client previews on individual subdomains before launch. I maintain the platform and deployment flow.",
     url: "https://websamples.click",
@@ -180,7 +174,7 @@ export const projects = [
     name: "WE Partners Network",
     description: "Active community platform for real estate entrepreneurs powered by eXp Realty. I maintain the site experience, content updates, and production reliability.",
     url: "https://wpn.websamples.click",
-    tags: ["Live Client Site", "Community", "WordPress"],
+    tags: ["Live Client Site", "Community", "Nuxt.js"],
   },
   {
     name: "Service Web Studio",
