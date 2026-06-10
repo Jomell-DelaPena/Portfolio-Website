@@ -188,6 +188,12 @@ export const projects = [
     url: "https://service-web-studio.vercel.app/",
     tags: ["Production", "Next.js", "Vercel"],
   },
+  {
+    name: "Website Redesigns",
+    description: "Personal showcase of custom website redesigns for small businesses — exploring how bespoke design sets a business apart from generic, template-looking sites.",
+    url: "https://website-redesigns-zeta.vercel.app/",
+    tags: ["Personal Project", "Web Design", "Showcase"],
+  },
 ];
 
 export const certifications = [
