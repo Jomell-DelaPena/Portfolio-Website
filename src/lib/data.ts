@@ -165,6 +165,12 @@ export const experience = [
 
 export const projects = [
   {
+    name: "PH Web Dev Services",
+    description: "Freelance web development group where most of my developer experience comes from. We build custom websites and full-stack web applications for local and international clients — from UI/UX to deployment.",
+    url: "https://phwebdevservices.com/",
+    tags: ["Freelance Group", "Full-Stack", "Production"],
+  },
+  {
     name: "WebSamples.click",
     description: "Production showcase hub used to host live, interactive client previews on individual subdomains before launch. I maintain the platform and deployment flow.",
     url: "https://websamples.click",
@@ -173,7 +179,7 @@ export const projects = [
   {
     name: "WE Partners Network",
     description: "Active community platform for real estate entrepreneurs powered by eXp Realty. I maintain the site experience, content updates, and production reliability.",
-    url: "https://wpn.websamples.click",
+    url: "https://www.wepartnersnetwork.com/",
     tags: ["Live Client Site", "Community", "Nuxt.js"],
   },
   {

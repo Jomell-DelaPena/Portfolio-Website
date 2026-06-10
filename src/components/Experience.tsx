@@ -40,7 +40,7 @@ export default function Experience() {
               </div>
 
               {/* Content */}
-              <div className="pb-1">
+              <div className="pb-1 flex-1 min-w-0">
                 <div className="flex items-start justify-between gap-2 flex-wrap">
                   <div>
                     <p
