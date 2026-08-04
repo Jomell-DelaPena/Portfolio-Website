@@ -132,6 +132,14 @@ export const capabilities = [
 
 export const experience = [
   {
+    role: "Technical Operations Lead",
+    company: "Automastery",
+    companyUrl: "https://automastery.com/",
+    period: "2026 — Present",
+    description: "Leading technical operations for a marketing agency serving auto repair shops. I design and manage websites, onboard clients onto custom automations I've built, and drive SEO improvements that help their businesses grow.",
+    current: true,
+  },
+  {
     role: "Digital Operations Specialist",
     company: "Service Web Studio",
     period: "2026 — Present",
