@@ -1,5 +1,5 @@
 export const personal = {
-  name: "Jomell Hope Dela Peña",
+  name: "Jomell Hope Garcia Dela Peña",
   title: "Full-Stack Developer",
   location: "Navotas, Philippines",
   email: "jomellhopedelapena@gmail.com",
