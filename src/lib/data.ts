@@ -142,6 +142,7 @@ export const experience = [
   {
     role: "Digital Operations Specialist",
     company: "Service Web Studio",
+    companyUrl: "https://service-web-studio.vercel.app/",
     period: "2026 — Present",
     description: "Overseeing digital workflows and operational systems for the agency. I handle web development on the marketing-agency side and build out various business systems — ERPs, POS, and internal tools — while diving deeper into automations that streamline processes, coordinate remote teams, and improve service delivery.",
     current: true,
